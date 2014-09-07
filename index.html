@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Baby Announcement</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="author" content="Jason Hancock" />
+        <meta name="copyright" content="Jason Hancock" />
+        <meta name="application-name" content="TerminalBaby" />
+
+        <!-- Facebook -->
+        <meta property="og:title" content="Terminal Baby - An interactive baby announcement" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="http://i.imgur.com/ICS0Ir5.png" />
+        <meta property="og:url" content="http://baby.jasonhancock.com" />
+        <meta property="og:description" content="An interactive baby announcement. Geek by trade, I wanted to have a little fun announcing the birth of our second child." />
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Terminal Baby - An interactive baby announcement" />
+        <meta name="twitter:description" content="An interactive baby announcement. Geek by trade, I wanted to have a little fun announcing the birth of our second child." content="http://i.imgur.com/ICS0Ir5.png" />
+
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="dist/css/site.min.css" rel="stylesheet" />
+    </head>
+    <body>
+
+        <div id="window">
+            <div id="toolbar">
+                <div class="top">
+                    <div id="lights">
+                        <div class="light red">
+                            <div class="glyph">×</div>
+                            <div class="shine"></div>
+                            <div class="glow"></div>
+                        </div>
+                        <div class="light yellow">
+                            <div class="glyph">-</div>
+                            <div class="shine"></div>
+                            <div class="glow"></div>
+                        </div>
+                        <div class="light green">
+                            <div class="glyph">+</div>
+                            <div class="shine"></div>
+                            <div class="glow"></div>
+                        </div>
+                    </div>
+                    <div id="title">
+                        <div class="folder">
+                            <div class="tab"></div>
+                            <div class="body"></div>
+                        </div>
+                        announcement
+                    </div>
+                    <div id="bubble">
+                        <div class="shine"></div>
+                        <div class="glow"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="terminal"></div>
+        </div>
+
+        <div style="text-align: center">
+            Inspired by <a href="http://wedding.jai.im/">wedding.jai.im</a>.
+            Built by <a href="https://twitter.com/jsnby">@jsnby</a>.
+        </div>
+
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="dist/js/site.min.js"></script>
+    </body>
+</html>
