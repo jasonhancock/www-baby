@@ -4,6 +4,7 @@ $(function() {
     var sysctl_vars = { 'birth.type': 'vaginal' };
     var services = {
         oliver: {
+            name: 'Oliver Monroe Hancock',
             status: false,
             weight: '7 lbs, 3 oz',
             length: '21',
@@ -14,6 +15,7 @@ $(function() {
             }
         },
         dexter: {
+            name: 'Dexter Brian Hancock',
             status: true,
             time: new Date("17 Aug 2010 19:55:00 PDT"),
             weight: '7 lbs, 6.5 oz',
@@ -83,7 +85,7 @@ $(function() {
         if(!services[inputs[1]].status) {
             term.echo(inputs[1] + ' is stopped');
         } else {
-            term.echo(inputs[1] + ' is running');
+            term.echo(inputs[1] + '(' + services[inputs[1]].name + ') is running');
             term.echo('The service is ' + age(services[inputs[1]].time) + ' old');
             term.echo('The service is ' + services[inputs[1]].weight + ' and ' + services[inputs[1]].length + ' inches long');
             term.echo('<img src="' + services[inputs[1]].image + '">', { raw: true});
