@@ -5,8 +5,9 @@ $(function() {
     var services = {
         oliver: {
             status: false,
-            weight: '7 lbs, 6.5 oz',
-            length: '22',
+            weight: '7 lbs, 3 oz',
+            length: '21',
+            image: 'http://i.imgur.com/J0oD390.png',
             commands: {
                 start: oliver_start,
                 status: true
@@ -132,7 +133,7 @@ $(function() {
         if(sysctl_vars['birth.type'] == 'caesarean') {
             term.insert('service oliver status');
             return {
-                start_time: new Date("9 Sep 2013 19:55:00 PDT"),
+                start_time: new Date("7 Sep 2014 18:16:00 PDT"),
                 success: true,
                 output: [
                     "Check the status of the service by running:",
